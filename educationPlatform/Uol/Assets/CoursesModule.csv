@@ -1,0 +1,30 @@
+Module name,Abbreviation,Code,Written exam,Instructor
+Algorithms and Data Structures I,ADS1,CM1035,Yes,Matty Hoban
+Computational Mathematics,CM,CM1015,Yes,Sarah Santos
+Discrete Mathematics,DM,CM1020,Yes,Lahcen Ouarbya
+Fundamentals of Computer Science,FCS,CM1025,Yes,Golnaz Badkobeh
+How Computers Work,HCW,CM1030,Yes,Marco Gillies
+Introduction to Programming I,ITP1,CM1005,No,Edward Anstead
+Introduction to Programming II,ITP2,CM1010,No,Edward Anstead
+Web Development,WD,CM1040,No,Nick Hine
+Agile Software Projects,ASP,CM2020,No,Sean McGrath
+Algorithms and Data Structures II,ADS2,CM2035,Yes,Alejandra Beghelli Zapata
+Computer Security,Csec,CM2025,Yes,Matthew Yee-King
+"Databases, Networks and the Web",DNW,CM2040,Yes,Elaheh Homayounvala
+Graphics Programming,GP,CM2030,No,Theo Papatheodorou
+Object Oriented Programming,OOP,CM2005,No,Matthew Yee-King
+Programming with Data,PWD,CM2015,Yes,Sean McGrath
+Software Design and Development,SDD,CM2010,Yes,Matthew Yee-King
+3D Graphics and Animation,3DGA,CM3045,Yes,Marco Gillies
+Advanced Web Development,AWD,CM3035,No,Daniel Buchan
+Artificial Intelligence,AI,CM3020,Yes,Larisa Soldatova
+Data Science,DS,CM3005,Yes,Tony Russel-Rose
+Databases and Advanced Data Techniques,DADT,CM3010,Yes,David Lewis
+Games Development,GD,CM3030,No,Tom Cole
+Intelligent Signal Processing,ISP,CM3065,No,Francisco Marti Perez
+Interaction Design,ID,CM3055,Yes,Sean McGrath
+Machine Learning and Neural Networks,MLNN,CM3015,No,Jamie Ward
+Mobile Development,MD,CM3050,No,Joe McAlister
+Natural Language Processing,NLP,CM3060,Yes,Tony Russel-Rose
+Physical Computing and Internet of Things,IOT,CM3040,No,Darpan Triboan
+Virtual Reality,VR,CM3025,No,Marco Gillies
