@@ -1,0 +1,30 @@
+ModuleName,Code,Writtenexam,Instructor,Category,publishDate
+Algorithms and Data Structures I,CM1035,Yes,Matty Hoban,Algorthims,11/06/2024
+Computational Mathematics,CM1015,Yes,Sarah Santos,Math,12/06/2024
+Discrete Mathematics,CM1020,Yes,Lahcen Ouarbya,Math,13/06/2024
+Fundamentals of Computer Science,CM1025,Yes,Golnaz Badkobeh,Science,14/06/2024
+How Computers Work,CM1030,Yes,Marco Gillies,Theory,15/06/2024
+Introduction to Programming I,CM1005,No,Edward Anstead,Programming,16/06/2024
+Introduction to Programming II,CM1010,No,Edward Anstead,Programming,17/06/2024
+Web Development,CM1040,No,Nick Hine,Web,18/06/2024
+Agile Software Projects,CM2020,No,Sean McGrath,Theory,19/06/2024
+Algorithms and Data Structures II,CM2035,Yes,Alejandra Beghelli Zapata,Algorthims,20/06/2024
+Computer Security,CM2025,Yes,Matthew Yee-King,Security,21/06/2024
+"Databases, Networks and the Web",CM2040,Yes,Elaheh Homayounvala,Web,22/06/2024
+Graphics Programming,CM2030,No,Theo Papatheodorou,Designing,23/06/2024
+Object Oriented Programming,CM2005,No,Matthew Yee-King,Programming,24/06/2024
+Programming with Data,CM2015,Yes,Sean McGrath,Data Science,25/06/2024
+Software Design and Development,CM2010,Yes,Matthew Yee-King,Theory,26/06/2024
+3D Graphics and Animation,CM3045,Yes,Marco Gillies,Designing,27/06/2024
+Advanced Web Development,CM3035,No,Daniel Buchan,Wen,28/06/2024
+Artificial Intelligence,CM3020,Yes,Larisa Soldatova,Artificial,29/06/2024
+Data Science,CM3005,Yes,Tony Russel-Rose,Data Science,30/06/2024
+Databases and Advanced Data Techniques,CM3010,Yes,David Lewis,Data Science,01/07/2024
+Games Development,CM3030,No,Tom Cole,Games,02/07/2024
+Intelligent Signal Processing,CM3065,No,Francisco Marti Perez,Artificial,03/07/2024
+Interaction Design,CM3055,Yes,Sean McGrath,Designing,04/07/2024
+Machine Learning and Neural Networks,CM3015,No,Jamie Ward,Machine,05/07/2024
+Mobile Development,CM3050,No,Joe McAlister,Mobile,06/07/2024
+Natural Language Processing,CM3060,Yes,Tony Russel-Rose,Theory,07/07/2024
+Physical Computing and Internet of Things,CM3040,No,Darpan Triboan,Theory,08/07/2024
+Virtual Reality,CM3025,No,Marco Gillies,Artificial,09/07/2024
