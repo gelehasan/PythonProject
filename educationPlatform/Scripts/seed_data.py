@@ -16,7 +16,7 @@ from Uol.models import *
 # Path to the CSV file
 usersData = os.path.join(baseDir, '..', 'Assets', 'Users.csv')
 
-"""
+ 
 def seed_users():
     with open(usersData, mode='r') as file:
         cvReader = csv.DictReader(file)
@@ -62,8 +62,7 @@ def seed_courses():
 if __name__ == "__main__":
     seed_courses()
 
-
-"""
+ 
 
 enrollmentsData = os.path.join(baseDir, '..', 'Assets', 'Enrollment.csv')
 
