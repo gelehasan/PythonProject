@@ -26,3 +26,11 @@ class UserDetail(mixins.CreateModelMixin,
 class UserList(generics.ListCreateAPIView):
     queryset = User.objects.all()
     serializer_class = UserSerializer
+
+
+class CoursesByInstructor(generics.ListAPIView):
+    serializer_class = CourseSerializer
+
+    def get_queryset(self):
+        instructor_id = self.kwargs['instructor_id']
+        return Course.objects.filter(instructor__id=instructor_id)
