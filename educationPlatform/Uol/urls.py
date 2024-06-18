@@ -29,5 +29,11 @@ urlpatterns = [
     path('user/update/<int:pk>/', views.UserUpdate.as_view(), name='user_update'),
     path('user/delete/<int:pk>/', views.UserDelete.as_view(), name='user_delete'),
 
+    # Course URLs
+    path('courses/', views.CourseList.as_view(), name='course_list'),
+    path('course/<int:pk>/', views.CourseDetail.as_view(), name='course_detail'),
+    path('course/add/', views.CourseCreate.as_view(), name='course_add'),
+    path('course/update/<int:pk>/', views.CourseUpdate.as_view(), name='course_update'),
+    path('course/delete/<int:pk>/', views.CourseDelete.as_view(), name='course_delete'),
 
 ]
