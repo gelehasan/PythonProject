@@ -36,4 +36,10 @@ urlpatterns = [
     path('course/update/<int:pk>/', views.CourseUpdate.as_view(), name='course_update'),
     path('course/delete/<int:pk>/', views.CourseDelete.as_view(), name='course_delete'),
 
+     # Enrollment URLs
+    path('enrollments/', views.EnrollmentList.as_view(), name='enrollment_list'),
+    path('enrollment/<int:pk>/', views.EnrollmentDetail.as_view(), name='enrollment_detail'),
+    path('enrollment/add/', views.EnrollmentCreate.as_view(), name='enrollment_add'),
+    path('enrollment/update/<int:pk>/', views.EnrollmentUpdate.as_view(), name='enrollment_update'),
+    path('enrollment/delete/<int:pk>/', views.EnrollmentDelete.as_view(), name='enrollment_delete'),
 ]
