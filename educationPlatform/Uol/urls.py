@@ -19,4 +19,15 @@ urlpatterns = [
     path('api/reviews/course/<int:course_id>/', api.ReviewsByCourse.as_view(), name='reviews_by_course'),
     path('api/courses/top-rated/', api.TopRatedCourses.as_view(), name='top_rated_courses'),
     path('api/enrollments/student/<int:user_id>/', api.EnrollmentProgressByStudent.as_view(), name='enrollment_progress_by_student'),
+
+
+    # Urls for the tradition view
+     # User URLs
+    path('users/', views.UserList.as_view(), name='user_list'),
+    path('user/<int:pk>/', views.UserDetail.as_view(), name='user_detail'),
+    path('user/add/', views.UserCreate.as_view(), name='user_add'),
+    path('user/update/<int:pk>/', views.UserUpdate.as_view(), name='user_update'),
+    path('user/delete/<int:pk>/', views.UserDelete.as_view(), name='user_delete'),
+
+
 ]
