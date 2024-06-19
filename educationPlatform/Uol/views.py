@@ -10,3 +10,9 @@ class UserList(ListView):
     model = User
     context_object_name = "users"
     template_name = 'uol/user_list.html'
+
+
+class UserDetail(DetailView):
+    model = User
+    context_object_name = "user"
+    template_name = 'uol/user_detail.html'
