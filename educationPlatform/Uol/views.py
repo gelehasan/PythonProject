@@ -16,3 +16,16 @@ class UserDetail(DetailView):
     model = User
     context_object_name = "user"
     template_name = 'uol/user_detail.html'
+
+
+class UserCreate(CreateView):
+    model = User
+    fields = ['userName', 'email', 'role']
+    template_name = 'uol/user_form.html'
+    success_url = "/users/"
+
+class UserUpdate(UpdateView):
+    model = User
+    fields = ['userName', 'email', 'role']
+    template_name_suffix = '_update_form'
+    success_url = "/users/"
