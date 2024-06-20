@@ -34,3 +34,15 @@ class UserUpdate(UpdateView):
 class UserDelete(DeleteView):
     model = User
     success_url = "/users/"
+
+
+# Course Views
+class CourseList(ListView):
+    model = Course
+    context_object_name = "courses"
+    template_name = 'uol/course_list.html'
+
+class CourseDetail(DetailView):
+    model = Course
+    context_object_name = "course"
+    template_name = 'uol/course_detail.html'
