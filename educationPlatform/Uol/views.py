@@ -29,3 +29,8 @@ class UserUpdate(UpdateView):
     fields = ['userName', 'email', 'role']
     template_name_suffix = '_update_form'
     success_url = "/users/"
+
+
+class UserDelete(DeleteView):
+    model = User
+    success_url = "/users/"
