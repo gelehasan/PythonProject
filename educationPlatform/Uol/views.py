@@ -46,3 +46,10 @@ class CourseDetail(DetailView):
     model = Course
     context_object_name = "course"
     template_name = 'uol/course_detail.html'
+
+
+class CourseCreate(CreateView):
+    model = Course
+    fields = ['modelName', 'writtenExam', 'category', 'instructor']
+    template_name = 'uol/course_form.html'
+    success_url = "/courses/"
