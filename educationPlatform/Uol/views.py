@@ -59,3 +59,7 @@ class CourseUpdate(UpdateView):
     fields = ['modelName', 'writtenExam', 'category', 'instructor']
     template_name_suffix = '_update_form'
     success_url = "/courses/"
+
+class CourseDelete(DeleteView):
+    model = Course
+    success_url = "/courses/"
