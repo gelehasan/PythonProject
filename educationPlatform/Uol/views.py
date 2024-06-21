@@ -53,3 +53,9 @@ class CourseCreate(CreateView):
     fields = ['modelName', 'writtenExam', 'category', 'instructor']
     template_name = 'uol/course_form.html'
     success_url = "/courses/"
+
+class CourseUpdate(UpdateView):
+    model = Course
+    fields = ['modelName', 'writtenExam', 'category', 'instructor']
+    template_name_suffix = '_update_form'
+    success_url = "/courses/"
