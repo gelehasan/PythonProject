@@ -77,3 +77,10 @@ class EnrollmentDetail(DetailView):
     model = Enrollment
     context_object_name = "enrollment"
     template_name = 'uol/enrollment_detail.html'
+
+
+class EnrollmentCreate(CreateView):
+    model = Enrollment
+    fields = ['user', 'course', 'progress', 'status']
+    template_name = 'uol/enrollment_form.html'
+    success_url = "/enrollments/"
