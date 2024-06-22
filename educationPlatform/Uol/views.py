@@ -71,3 +71,9 @@ class EnrollmentList(ListView):
     model = Enrollment
     context_object_name = "enrollments"
     template_name = 'uol/enrollment_list.html'
+
+
+class EnrollmentDetail(DetailView):
+    model = Enrollment
+    context_object_name = "enrollment"
+    template_name = 'uol/enrollment_detail.html'
