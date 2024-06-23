@@ -84,3 +84,10 @@ class EnrollmentCreate(CreateView):
     fields = ['user', 'course', 'progress', 'status']
     template_name = 'uol/enrollment_form.html'
     success_url = "/enrollments/"
+
+
+class EnrollmentUpdate(UpdateView):
+    model = Enrollment
+    fields = ['user', 'course', 'progress', 'status']
+    template_name_suffix = '_update_form'
+    success_url = "/enrollments/"
