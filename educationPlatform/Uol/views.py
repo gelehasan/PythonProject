@@ -95,3 +95,10 @@ class EnrollmentUpdate(UpdateView):
 class EnrollmentDelete(DeleteView):
     model = Enrollment
     success_url = "/enrollments/"
+
+
+# CourseReview Views
+class CourseReviewList(ListView):
+    model = CourseReview
+    context_object_name = "reviews"
+    template_name = 'uol/review_list.html'
