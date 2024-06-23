@@ -91,3 +91,7 @@ class EnrollmentUpdate(UpdateView):
     fields = ['user', 'course', 'progress', 'status']
     template_name_suffix = '_update_form'
     success_url = "/enrollments/"
+
+class EnrollmentDelete(DeleteView):
+    model = Enrollment
+    success_url = "/enrollments/"
