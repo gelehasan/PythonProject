@@ -1,6 +1,6 @@
 from rest_framework import generics, mixins
 from .models import User, Course, Enrollment, CourseReview
-from .serializers import UserSerializer, CourseSerializer, EnrollmentSerializer, CourseReviewSerializer
+from .serializers import *
 
 # Basic CRUD views
 class UserDetail(mixins.CreateModelMixin,

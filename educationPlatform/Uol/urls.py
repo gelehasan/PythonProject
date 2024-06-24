@@ -6,7 +6,7 @@ urlpatterns = [
     path('api/users/', api.UserList.as_view(), name='user_list_api'),
     path('api/user/<int:pk>/', api.UserDetail.as_view(), name='user_detail_api'),
     path('api/courses/', api.CourseList.as_view(), name='course_list_api'),
-    path('api/course/<int:pk>/', api.CourseDetail.as_view(), name='course_detail_api'),
+    path('api/course/<str:pk>/', api.CourseDetail.as_view(), name='course_detail_api'),  # Change <int:pk> to <str:pk>
     path('api/enrollments/', api.EnrollmentList.as_view(), name='enrollment_list_api'),
     path('api/enrollment/<int:pk>/', api.EnrollmentDetail.as_view(), name='enrollment_detail_api'),
     path('api/reviews/', api.CourseReviewList.as_view(), name='review_list_api'),
@@ -14,9 +14,9 @@ urlpatterns = [
 
     # Complex query API views
     path('api/courses/instructor/<int:instructor_id>/', api.CoursesByInstructor.as_view(), name='courses_by_instructor'),
-    path('api/enrollments/course/<int:course_id>/', api.EnrollmentsByCourse.as_view(), name='enrollments_by_course'),
+    path('api/enrollments/course/<str:course_id>/', api.EnrollmentsByCourse.as_view(), name='enrollments_by_course'),  # Change <int:course_id> to <str:course_id>
     path('api/students/category/<str:category>/', api.StudentsByCourseCategory.as_view(), name='students_by_category'),
-    path('api/reviews/course/<int:course_id>/', api.ReviewsByCourse.as_view(), name='reviews_by_course'),
+    path('api/reviews/course/<str:course_id>/', api.ReviewsByCourse.as_view(), name='reviews_by_course'),  # Change <int:course_id> to <str:course_id>
     path('api/courses/top-rated/', api.TopRatedCourses.as_view(), name='top_rated_courses'),
     path('api/enrollments/student/<int:user_id>/', api.EnrollmentProgressByStudent.as_view(), name='enrollment_progress_by_student'),
 
@@ -30,10 +30,10 @@ urlpatterns = [
 
     # Course URLs
     path('courses/', views.CourseList.as_view(), name='course_list'),
-    path('course/<int:pk>/', views.CourseDetail.as_view(), name='course_detail'),
+    path('course/<str:pk>/', views.CourseDetail.as_view(), name='course_detail'),  # Change <int:pk> to <str:pk>
     path('course/add/', views.CourseCreate.as_view(), name='course_add'),
-    path('course/update/<int:pk>/', views.CourseUpdate.as_view(), name='course_update'),
-    path('course/delete/<int:pk>/', views.CourseDelete.as_view(), name='course_delete'),
+    path('course/update/<str:pk>/', views.CourseUpdate.as_view(), name='course_update'),  # Change <int:pk> to <str:pk>
+    path('course/delete/<str:pk>/', views.CourseDelete.as_view(), name='course_delete'),  # Change <int:pk> to <str:pk>
 
     # Enrollment URLs
     path('enrollments/', views.EnrollmentList.as_view(), name='enrollment_list'),

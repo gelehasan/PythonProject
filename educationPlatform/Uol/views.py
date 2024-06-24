@@ -4,6 +4,9 @@ from .models import User, Course, Enrollment, CourseReview
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 
 # Create your views here.
+def index(request):
+    return HttpResponseRedirect('/users/')
+
 
 # User Views
 class UserList(ListView):
