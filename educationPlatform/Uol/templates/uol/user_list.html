@@ -1,0 +1,13 @@
+{% extends 'uol/base.html' %}
+
+{% block title %}User List{% endblock %}
+
+{% block content %}
+    <h2>User List</h2>
+    <ul>
+        {% for user in users %}
+            <li><a href="{% url 'user_detail' user.id %}">{{ user.userName }}</a></li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'user_add' %}">Add a new user</a>
+{% endblock %}

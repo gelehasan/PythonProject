@@ -1,0 +1,15 @@
+{% extends 'uol/base.html' %}
+
+{% block title %}Course Detail{% endblock %}
+
+{% block content %}
+    <h2>Course Detail</h2>
+    <p>Model Name: {{ course.modelName }}</p>
+    <p>Written Exam: {{ course.writtenExam }}</p>
+    <p>Category: {{ course.category }}</p>
+    <p>Instructor: {{ course.instructor }}</p>
+    <p>Publish Date: {{ course.publishDate }}</p>
+    <a href="{% url 'course_update' course.id %}">Edit</a>
+    <a href="{% url 'course_delete' course.id %}">Delete</a>
+    <a href="{% url 'course_list' %}">Back to Course List</a>
+{% endblock %}

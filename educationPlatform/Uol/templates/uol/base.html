@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}UOL Course Review{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1>Course Review</h1>
+        <nav>
+            <a href="{% url 'user_list' %}">Users</a>
+            <a href="{% url 'course_list' %}">Courses</a>
+            <a href="{% url 'enrollment_list' %}">Enrollments</a>
+            <a href="{% url 'review_list' %}">Reviews</a>
+        </nav>
+    </header>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+</body>
+</html>

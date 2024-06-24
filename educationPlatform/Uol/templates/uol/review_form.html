@@ -1,0 +1,13 @@
+{% extends 'uol/base.html' %}
+
+{% block title %}{% if review.id %}Update Review{% else %}Add Review{% endif %}{% endblock %}
+
+{% block content %}
+    <h2>{% if review.id %}Update Review{% else %}Add Review{% endif %}</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Save</button>
+    </form>
+    <a href="{% url 'review_list' %}">Back to Review List</a>
+{% endblock %}

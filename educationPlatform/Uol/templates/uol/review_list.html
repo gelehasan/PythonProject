@@ -1,0 +1,13 @@
+{% extends 'uol/base.html' %}
+
+{% block title %}Review List{% endblock %}
+
+{% block content %}
+    <h2>Review List</h2>
+    <ul>
+        {% for review in reviews %}
+            <li><a href="{% url 'review_detail' review.id %}">{{ review.user.userName }} reviewed {{ review.course.modelName }}</a></li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'review_add' %}">Add a new review</a>
+{% endblock %}

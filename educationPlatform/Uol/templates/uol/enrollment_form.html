@@ -1,0 +1,13 @@
+{% extends 'uol/base.html' %}
+
+{% block title %}{% if enrollment.id %}Update Enrollment{% else %}Add Enrollment{% endif %}{% endblock %}
+
+{% block content %}
+    <h2>{% if enrollment.id %}Update Enrollment{% else %}Add Enrollment{% endif %}</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Save</button>
+    </form>
+    <a href="{% url 'enrollment_list' %}">Back to Enrollment List</a>
+{% endblock %}

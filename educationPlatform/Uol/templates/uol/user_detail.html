@@ -1,0 +1,14 @@
+{% extends 'uol/base.html' %}
+
+{% block title %}User Detail{% endblock %}
+
+{% block content %}
+    <h2>User Detail</h2>
+    <p>Username: {{ user.userName }}</p>
+    <p>Email: {{ user.email }}</p>
+    <p>Role: {{ user.role }}</p>
+    <p>Join Date: {{ user.joinDate }}</p>
+    <a href="{% url 'user_update' user.id %}">Edit</a>
+    <a href="{% url 'user_delete' user.id %}">Delete</a>
+    <a href="{% url 'user_list' %}">Back to User List</a>
+{% endblock %}

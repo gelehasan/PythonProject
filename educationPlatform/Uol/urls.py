@@ -1,5 +1,5 @@
 from django.urls import path
-from . import api
+from . import api, views
 
 urlpatterns = [
     # Basic CRUD API views
@@ -20,9 +20,8 @@ urlpatterns = [
     path('api/courses/top-rated/', api.TopRatedCourses.as_view(), name='top_rated_courses'),
     path('api/enrollments/student/<int:user_id>/', api.EnrollmentProgressByStudent.as_view(), name='enrollment_progress_by_student'),
 
-
-    # Urls for the tradition view
-     # User URLs
+    # Traditional view URLs
+    # User URLs
     path('users/', views.UserList.as_view(), name='user_list'),
     path('user/<int:pk>/', views.UserDetail.as_view(), name='user_detail'),
     path('user/add/', views.UserCreate.as_view(), name='user_add'),
@@ -36,10 +35,17 @@ urlpatterns = [
     path('course/update/<int:pk>/', views.CourseUpdate.as_view(), name='course_update'),
     path('course/delete/<int:pk>/', views.CourseDelete.as_view(), name='course_delete'),
 
-     # Enrollment URLs
+    # Enrollment URLs
     path('enrollments/', views.EnrollmentList.as_view(), name='enrollment_list'),
     path('enrollment/<int:pk>/', views.EnrollmentDetail.as_view(), name='enrollment_detail'),
     path('enrollment/add/', views.EnrollmentCreate.as_view(), name='enrollment_add'),
     path('enrollment/update/<int:pk>/', views.EnrollmentUpdate.as_view(), name='enrollment_update'),
     path('enrollment/delete/<int:pk>/', views.EnrollmentDelete.as_view(), name='enrollment_delete'),
+
+    # CourseReview URLs
+    path('reviews/', views.CourseReviewList.as_view(), name='review_list'),
+    path('review/<int:pk>/', views.CourseReviewDetail.as_view(), name='review_detail'),
+    path('review/add/', views.CourseReviewCreate.as_view(), name='review_add'),
+    path('review/update/<int:pk>/', views.CourseReviewUpdate.as_view(), name='review_update'),
+    path('review/delete/<int:pk>/', views.CourseReviewDelete.as_view(), name='review_delete'),
 ]

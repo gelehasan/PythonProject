@@ -1,0 +1,13 @@
+{% extends 'uol/base.html' %}
+
+{% block title %}Course List{% endblock %}
+
+{% block content %}
+    <h2>Course List</h2>
+    <ul>
+        {% for course in courses %}
+            <li><a href="{% url 'course_detail' course.id %}">{{ course.modelName }}</a></li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'course_add' %}">Add a new course</a>
+{% endblock %}

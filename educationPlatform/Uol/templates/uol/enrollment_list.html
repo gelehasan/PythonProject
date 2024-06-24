@@ -1,0 +1,13 @@
+{% extends 'uol/base.html' %}
+
+{% block title %}Enrollment List{% endblock %}
+
+{% block content %}
+    <h2>Enrollment List</h2>
+    <ul>
+        {% for enrollment in enrollments %}
+            <li><a href="{% url 'enrollment_detail' enrollment.id %}">{{ enrollment.user.userName }} enrolled in {{ enrollment.course.modelName }}</a></li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'enrollment_add' %}">Add a new enrollment</a>
+{% endblock %}

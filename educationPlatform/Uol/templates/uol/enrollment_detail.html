@@ -1,0 +1,14 @@
+{% extends 'uol/base.html' %}
+
+{% block title %}Enrollment Detail{% endblock %}
+
+{% block content %}
+    <h2>Enrollment Detail</h2>
+    <p>User: {{ enrollment.user.userName }}</p>
+    <p>Course: {{ enrollment.course.modelName }}</p>
+    <p>Progress: {{ enrollment.progress }}</p>
+    <p>Status: {{ enrollment.status }}</p>
+    <a href="{% url 'enrollment_update' enrollment.id %}">Edit</a>
+    <a href="{% url 'enrollment_delete' enrollment.id %}">Delete</a>
+    <a href="{% url 'enrollment_list' %}">Back to Enrollment List</a>
+{% endblock %}

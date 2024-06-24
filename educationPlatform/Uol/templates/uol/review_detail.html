@@ -1,0 +1,15 @@
+{% extends 'uol/base.html' %}
+
+{% block title %}Review Detail{% endblock %}
+
+{% block content %}
+    <h2>Review Detail</h2>
+    <p>User: {{ review.user.userName }}</p>
+    <p>Course: {{ review.course.modelName }}</p>
+    <p>Rating: {{ review.rating }}</p>
+    <p>Comment: {{ review.comment }}</p>
+    <p>Review Date: {{ review.ReviewDate }}</p>
+    <a href="{% url 'review_update' review.id %}">Edit</a>
+    <a href="{% url 'review_delete' review.id %}">Delete</a>
+    <a href="{% url 'review_list' %}">Back to Review List</a>
+{% endblock %}
