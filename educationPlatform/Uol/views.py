@@ -102,3 +102,25 @@ class CourseReviewList(ListView):
     model = CourseReview
     context_object_name = "reviews"
     template_name = 'uol/review_list.html'
+
+
+class CourseReviewDetail(DetailView):
+    model = CourseReview
+    context_object_name = "review"
+    template_name = 'uol/review_detail.html'
+
+class CourseReviewCreate(CreateView):
+    model = CourseReview
+    fields = ['user', 'course', 'rating', 'comment']
+    template_name = 'uol/review_form.html'
+    success_url = "/reviews/"
+
+class CourseReviewUpdate(UpdateView):
+    model = CourseReview
+    fields = ['user', 'course', 'rating', 'comment']
+    template_name_suffix = '_update_form'
+    success_url = "/reviews/"
+
+class CourseReviewDelete(DeleteView):
+    model = CourseReview
+    success_url = "/reviews/"
